@@ -52,7 +52,7 @@ class Metodos():
         E se sim, chama método api_mac()
         """
         try:
-            self.connection = routeros_api.RouterOsApiPool(host=self.concentrador, username='suporte', password='oluap186', plaintext_login=True)
+            self.connection = routeros_api.RouterOsApiPool(host=self.concentrador, username='nome_de_usuário', password='senha', plaintext_login=True)
             api = self.connection.get_api()
         except:
             print('Conexão falhou')
